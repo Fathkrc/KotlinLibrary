@@ -1,7 +1,7 @@
 package lesson1
 //I just copied everything from Kotlin01 Java class and pasted into Kotlin02 kotlin file and
 //Java asked me to convert Java codes into Kotlin format I accepted .
-//My course has published at 2018 so something have changed in Kotlin construction
+//My course has published at 2018 so something have changed in Kotlin structure
 
 class Kotlin02 (val name: String,val age: Int){//don't need const. or getter-setter
     override fun toString(): String {
