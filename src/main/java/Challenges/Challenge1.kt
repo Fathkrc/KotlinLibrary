@@ -1,5 +1,7 @@
 package Challenges
 
+import java.util.*
+
 class Challenge1 {
     /* Declare two immutable String variables called hello1 and hello2.
    Assign "Hello" to both variables
@@ -23,7 +25,7 @@ fun main() {
     //uppercased string
     val text:Any="The Any type is the root of the Kotlin class hierarchy"
     if (text is String) {
-        println(text.toUpperCase())
+        println(text.uppercase(Locale.getDefault()))
     }
     //Using one line of code print out the folllowing make sure your code is intended(amaçlanan)
     println("   1\n  11\n 111\n1111")
