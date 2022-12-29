@@ -11,7 +11,7 @@ fun main() {
     // String? is a nullable
     //We can't reach String methods like(toUpperCase() ect) in this case
     // Kotlin doesn't let us because it's nullable Variable
-    str?.uppercase()//Not working on my Kotlin as it should I guess there are some updates about this
+    str?.uppercase(Locale.getDefault())//Not working on my Kotlin as it should I guess there are some updates about this
     println("What happens when we do this : ${str?.uppercase()}")
     // toUpperCase() method is depricated !!!
 
@@ -30,7 +30,4 @@ fun main() {
     println(str3)
     str3?.uppercase()//we handled exception again adn result is null
     println(str3)
-
-
-
 }
