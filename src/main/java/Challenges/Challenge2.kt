@@ -39,4 +39,5 @@ fun main() {
     val myNonNullVar:Int? = null
     myNonNullVar!!.toDouble()
 
+
 }
