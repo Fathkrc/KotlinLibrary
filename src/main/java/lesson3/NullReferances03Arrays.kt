@@ -6,8 +6,10 @@ class NullReferances03Arrays {
 fun main() {
     val nullableInts= arrayOfNulls<Int?>(5)
     for (i in nullableInts) {
-        println(i)
+        print(i)
     }
+    var num=12
+    
 
     println(nullableInts[3].toString())
     /*
@@ -17,3 +19,4 @@ fun main() {
      , it prints it as "null"
      */
 }
+
