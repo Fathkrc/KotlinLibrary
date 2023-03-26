@@ -6,11 +6,12 @@ class NullReferances {
 }
 
 fun main() {
-    //  var str:String=null | in Kotlin "null" can not value for "not-null" String
+    //  var str:String=null | in Kotlin "null" can not be assigned value for "not-null" String
     var str: String? = null
     // String? is a nullable
     //We can't reach String methods like(toUpperCase() ect) in this case
     // Kotlin doesn't let us because it's nullable Variable
+    // Unlike java Kotlin shows us null Compile time error
     str?.uppercase()//Not working on my Kotlin as it should I guess there are some updates about this
     println("What happens when we do this : ${str?.uppercase()}")
     // toUpperCase() method is depricated !!!
@@ -19,7 +20,7 @@ fun main() {
     //it is a nested if situation on one line if there is a null our variable is null
     //Without exceptions
 
-    //ELVIS OPERATOR==> ?:
+    //!!! ELVIS OPERATOR==> ?:
     //It lets you assign a default value when an expression valuates to null
     val str2=str?: "This is a default value"//compiler does not complain because default value is every case String even str is null
     println(str2)// output is This is a default value if str is null

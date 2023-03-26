@@ -20,12 +20,14 @@ fun main() {
     }
 */
 
-    str?.let{ printText(it)}
+    str?.let{ printText(it)}  // it is a if it's null don't act but its not null implement the function
     val str4:String?=null
     val anotherString ="This is not nullable"
-    println(str4==anotherString)//REMINDER!! "==" checks structural equality in Kotlin unlike JAVA
+    println(str4==anotherString)//REMINDER!! "==" checks structural equality in Kotlin unlike JAVA "irrelative btw"
+    //println(str4==anotherString) means if str4 is null print anotherString as default
     // Operation does null check undercover , and  we don't see exception in this situation
     // Kotlin makes this function SAFE itself
+    var b:Boolean? =null // I just tried smt here
 
 
 }

@@ -10,7 +10,7 @@ class Kotlin02 (val name: String,val age: Int){//don't need const. or getter-set
 
 }
 fun main() {
-    val person1=Kotlin02("Fatih",30);
+    var person1=Kotlin02("Fatih",30)
     println(person1)
     println(person1.name)
 }
